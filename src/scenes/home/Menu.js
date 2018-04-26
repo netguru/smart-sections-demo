@@ -1,6 +1,6 @@
 import React from 'react';
-import { Wrapper } from './components/Wrapper';
-import { Item } from './components/Item';
+import { Wrapper } from './menu/Wrapper';
+import { Item } from './menu/Item';
 import { SectionsSpy } from 'react-smart-sections';
 
 export const Menu = () => (

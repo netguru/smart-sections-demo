@@ -1,7 +1,7 @@
 import React from 'react';
-import { Dot } from './components/Dot';
-import { Wrapper } from './components/Wrapper';
-import { Rectangle } from './components/Rectangle';
+import { Dot } from './item/Dot';
+import { Wrapper } from './item/Wrapper';
+import { Rectangle } from './item/Rectangle';
 import animateScrollTo from 'animated-scroll-to';
 
 export class Item extends React.Component {
