@@ -13,7 +13,7 @@ export const Menu = () => (
               key={section.name}
               name={section.name}
               active={section.active}
-              scroll={section.scroll}
+              yScrollPoint={section.yScrollPoint}
             />
           ))
         }
