@@ -5,6 +5,6 @@ import { ELEMENTS } from '../../services/elements';
 
 export const Menu = () => (
   <Wrapper>
-    <ul>{ELEMENTS.map((_, i) => <Item key={i} />)}</ul>
+    <ul>{ELEMENTS.map((_, i) => <Item key={i} name={i} />)}</ul>
   </Wrapper>
 );
