@@ -2,6 +2,7 @@ import React from 'react';
 import { Dot } from './item/Dot';
 import { Wrapper } from './item/Wrapper';
 import { Rectangle } from './item/Rectangle';
+import { Link } from './item/Link';
 import animateScrollTo from 'animated-scroll-to';
 
 export class Item extends React.Component {
@@ -11,14 +12,14 @@ export class Item extends React.Component {
   };
 
   render() {
-    const { active } = this.props;
+    const { active, name } = this.props;
     return (
-      <a href="#" onClick={this.handleClick}>
+      <Link href="#" onClick={this.handleClick}>
         <Wrapper>
           <Dot active={active} />
-          <Rectangle active={active} />
+          <Rectangle active={active}>{name}</Rectangle>
         </Wrapper>
-      </a>
+      </Link>
     );
   }
 }
