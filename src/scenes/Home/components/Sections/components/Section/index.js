@@ -1,12 +1,12 @@
 import React from 'react';
 import { Wrapper } from './components/Wrapper';
 import { Content } from './components/Content';
-import { Element } from 'react-scroll';
+import { Section as SmartSection } from 'react-smart-sections';
 
 export const Section = ({ name }) => (
-  <Element name={String(name)}>
+  <SmartSection name={String(name)}>
     <Wrapper>
       <Content />
     </Wrapper>
-  </Element>
+  </SmartSection>
 );

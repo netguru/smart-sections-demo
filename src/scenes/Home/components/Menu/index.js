@@ -1,10 +1,23 @@
 import React from 'react';
 import { Wrapper } from './components/Wrapper';
 import { Item } from './components/Item';
-import { ELEMENTS } from '../../services/elements';
+import { SectionsSpy } from 'react-smart-sections';
 
 export const Menu = () => (
   <Wrapper>
-    <ul>{ELEMENTS.map((_, i) => <Item key={i} name={i} />)}</ul>
+    <ul>
+      <SectionsSpy
+        render={sections =>
+          sections.map(section => (
+            <Item
+              key={section.name}
+              name={section.name}
+              active={section.active}
+              scroll={section.scroll}
+            />
+          ))
+        }
+      />
+    </ul>
   </Wrapper>
 );
