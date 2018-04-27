@@ -8,7 +8,7 @@ import animateScrollTo from 'animated-scroll-to';
 export class Item extends React.Component {
   handleClick = e => {
     e.preventDefault();
-    animateScrollTo(this.props.yScrollPoint + 80);
+    animateScrollTo(this.props.yScrollPoint);
   };
 
   render() {
